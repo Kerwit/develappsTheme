@@ -1,0 +1,14 @@
+{
+  "packageName": "develappsTheme",
+  "name": "Develapps Theme",
+  "description": "Flutter themeData generator",
+  "version": "0.1.0",
+  "platforms": [
+    "web",
+    "android",
+    "ios",
+    "osx"
+  ],
+  "moduleURL": "./main.js",
+  "readmeURL": "./README.md"
+}

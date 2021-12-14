@@ -1,0 +1,105 @@
+{
+  "name": "develappsTheme",
+  "version": "0.1.0",
+  "description": "Flutter AppStyle generator",
+  "sideEffects": false,
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "test": "zem test",
+    "publish": "zem publish"
+  },
+  
+  "zeplin": {
+    "displayName": "FutterAppStyle",
+    "platforms": [
+      "web",
+      "android",
+      "ios",
+      "osx"
+    ],
+    "options": [
+      {
+        "name": "Color class name prefix ex) class ZeplinColors",
+        "type": "text",
+        "id": "colorsClassPrefix",
+        "default": "Theme"
+      },
+      {
+        "name": "Use color name ex) ZeplinColors.white",
+        "type": "switch",
+        "id": "useColorName",
+        "default": true
+      },
+      {
+        "name": "Text widget class name. It can be used for custom class. ex) class StrutText",
+        "type": "text",
+        "id": "textWidgetClassName",
+        "default": "TextStyle"
+      },
+      
+      {
+        "name": "Use text style name ex) ZeplinTextStyles.title",
+        "type": "switch",
+        "id": "useTextStyleName",
+        "default": false
+      },
+      {
+        "name": "Skip Default value ex) ~FontWeight.w400~",
+        "type": "switch",
+        "id": "defaultValueSkipped",
+        "default": true
+      },
+      {
+        "name": "Skip width in Container",
+        "type": "switch",
+        "id": "widthInContainerSkipped",
+        "default": true
+      },
+      {
+        "name": "Skip height in Container",
+        "type": "switch",
+        "id": "heightInContainerSkipped",
+        "default": false
+      },
+      {
+        "name": "Skip margin left & right in Container",
+        "type": "switch",
+        "id": "marginLeftAndRightInContainerSkipped",
+        "default": false
+      },
+      {
+        "name": "Skip font family in TextStyle ex) AppleSDGothicNeo,HelveticaNeue (* : All font)",
+        "type": "text",
+        "id": "excludeFontFamily",
+        "default": ""
+      },
+      {
+        "name": "Skip letterSpacing in TextStyle",
+        "type": "switch",
+        "id": "letterSpacingValueSkipped",
+        "default": true
+      },
+      {
+        "name": "Skip lineHeight in TextStyle",
+        "type": "switch",
+        "id": "lineHeightValueSkipped",
+        "default": true
+      },
+      {
+        "name": "Skip StrutStyle in Text",
+        "type": "switch",
+        "id": "strutStyleSkipped",
+        "default": true
+      }
+    ]
+  },
+  "dependencies": {
+    "zem": "^1.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  }
+}
