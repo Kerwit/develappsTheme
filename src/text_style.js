@@ -43,7 +43,7 @@ export function toDart(context, textStyle, depth = 1, useName = true) {
     var letterSpacingElement = "";
     var lineHeightElement = "";
 
-    const skipDefaultValue = options.skipDefaultValue(context);
+    const skipDefaultValue = true;//options.skipDefaultValue(context);
 
     if (textStyle.fontSize != null) {
         if (!(skipDefaultValue && textStyle.fontSize == 14.0)) {
@@ -52,7 +52,7 @@ export function toDart(context, textStyle, depth = 1, useName = true) {
     }
 
     if (textStyle.fontFamily != null) {
-        const excludedFonts = options.skipFontFamilies(context);
+        const excludedFonts = "";
         if (excludedFonts != '*') {
             if (!excludedFonts.includes(textStyle.fontFamily)) {
                 fontFamilyElement = `\n${depthStr}fontFamily: '${textStyle.fontFamily}',`;

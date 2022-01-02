@@ -14,7 +14,7 @@ export function toDart(context, textStyle, depth = 1) {
     var fontWeightElement = "";
     var fontStyleElement = "";
 
-    const skipDefaultValue = options.skipDefaultValue(context);
+    const skipDefaultValue = true;//options.skipDefaultValue(context);
 
     if (textStyle.fontSize != null) {
         if (!(skipDefaultValue && textStyle.fontSize == 14.0)) {

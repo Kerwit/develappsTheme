@@ -61,13 +61,13 @@ export function widget(context, layer) {
 function textToDart(context, textSelected) {
     var strutStyleElement = "";
     const skipStrutStyleSkipped = options.SkipStrutStyleSkipped(context);
-    if (!skipStrutStyleSkipped) {
+    if (skipStrutStyleSkipped) {
         strutStyleElement = `\n\tstrutStyle: ${strutStyle.toDart(context, textSelected.textStyle, 2)},`;
     }   
     
     const name = options.textWidgetClassName(context);
 
-    return `${name}('${textSelected.text}',
+    return `new Text('${textSelected.text}',
 \tstyle: ${textStyle.toDart(context, textSelected.textStyle, 2)},${strutStyleElement}
 ),`;
 }
@@ -103,7 +103,7 @@ function richTextToDart(context, textSpans) {
 
     const name = options.textWidgetClassName(context);
 
-    return `${name}.rich(
+    return `"TextStyle".rich(
 \tTextSpan(
 \t\tchildren: [${textSpans.map( ts => { return "\n\t\t\t" + textSpan.toDart(context, ts, 4)})},
 \t\t],

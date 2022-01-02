@@ -61,14 +61,14 @@ export function skipDefaultValue(context) {
 }
 
 export function skipWidthInContainer(context) {
-    return context.getOption(OPTION_KEYS.SKIP_WIDTH_CONTAINER);
+    return false; //context.getOption(OPTION_KEYS.SKIP_WIDTH_CONTAINER);
 }
 
 export function skipHeightInContainer(context) {
-    return context.getOption(OPTION_KEYS.SKIP_HEIGHT_CONTAINER);
+    return false;//context.getOption(OPTION_KEYS.SKIP_HEIGHT_CONTAINER);
 }
 export function skipMarginLeftAndRight(context) {
-    return context.getOption(OPTION_KEYS.SKIP_MARGIN_LEFT_RIGHT_CONTAINER);
+    return false;//context.getOption(OPTION_KEYS.SKIP_MARGIN_LEFT_RIGHT_CONTAINER);
 }
 
 export function skipFontFamilies(context) {

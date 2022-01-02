@@ -1,14 +1,19 @@
 {
   "packageName": "develappsTheme",
-  "name": "Develapps Theme",
-  "description": "Flutter themeData generator",
+  "name": "FutterAppStyle",
+  "description": "Flutter AppStyle generator",
   "version": "0.1.0",
+  "author": {
+    "name": "Carlos Cabezas",
+    "email": "carlos.cabezas@kerwit.com"
+  },
   "platforms": [
     "web",
     "android",
     "ios",
     "osx"
   ],
-  "moduleURL": "./main.js",
+  "moduleURL": "./main.14eda059.js",
+  "repository": "https://github.com/Kerwit/develappsTheme.git",
   "readmeURL": "./README.md"
 }

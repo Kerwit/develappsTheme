@@ -106,7 +106,7 @@ function comment(context, text) {
 }
 
 function projectColorsToDart(context) {
-    const prefix = options.colorsClassPrefix(context);
+    //const prefix = options.colorsClassPrefix(context);
     var body = `class AppColorStyle {\n`;
 
     var colors = [];
@@ -123,7 +123,7 @@ function projectColorsToDart(context) {
 }
 
 function projectButtonsToDart(context) {
-    const prefix = options.colorsClassPrefix(context);
+  //  const prefix = options.colorsClassPrefix(context);
     var body = `class AppColorStyle {\n`;
 
     var colors = [];
@@ -140,8 +140,8 @@ function projectButtonsToDart(context) {
 }
 
 function projectTextStylesToDart(context) {
-    const prefix = options.textStylesClassPrefix(context);
-    var body = ` ${prefix}class AppTextStyle {\n`;
+   // const prefix = options.textStylesClassPrefix(context);
+    var body = ` class AppTextStyle {\n`;
 
     var textStyles = [];
     context.project.textStyles.map(
